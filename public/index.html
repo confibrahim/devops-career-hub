@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#11151b" />
+  <meta name="description" content="A private career command centre for DevOps applications, follow-ups and GitHub projects." />
+  <title>DevOps Career Hub</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="DevOps Career Hub home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span class="brand-copy"><strong>DevOps</strong><small>CAREER HUB</small></span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="dashboard"><span class="nav-icon">⌂</span><span>Dashboard</span></button>
+        <button class="nav-item" data-page="applications"><span class="nav-icon">▤</span><span>Job applications</span><span class="nav-count" id="nav-app-count">3</span></button>
+        <button class="nav-item" data-page="followups"><span class="nav-icon">↗</span><span>Follow-ups</span><span class="nav-dot" id="nav-follow-dot"></span></button>
+        <button class="nav-item" data-page="github"><span class="nav-icon">⌘</span><span>GitHub projects</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="nav-item" data-page="settings"><span class="nav-icon">⚙</span><span>Settings</span></button>
+        <div class="sidebar-divider"></div>
+        <div class="profile-mini"><div class="avatar">IY</div><div class="profile-text"><strong>Ibrahim Yusuf</strong><small>Career workspace</small></div><span class="profile-menu">···</span></div>
+        <div class="local-indicator"><span class="pulse-dot"></span> Private on this device</div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open navigation">☰</button>
+        <div class="breadcrumbs"><span>Career Hub</span><span class="crumb-sep">/</span><strong id="page-crumb">Dashboard</strong></div>
+        <div class="top-actions"><div class="connection-pill"><span class="connection-dot"></span><span id="connection-label">Local database</span></div><button class="icon-button" id="top-add" title="Add application" aria-label="Add application">＋</button><div class="avatar top-avatar">IY</div></div>
+      </header>
+      <div id="page-content" class="page-content" tabindex="-1"></div>
+    </main>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast-region" class="toast-region" role="status" aria-live="polite"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
